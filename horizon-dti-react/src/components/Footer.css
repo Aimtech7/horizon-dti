@@ -1,0 +1,143 @@
+.site-footer {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 60px 0 20px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-branding {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #e94560;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a,
+.footer-contact li {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #e94560;
+  padding-left: 5px;
+}
+
+.admission-portal-link {
+  color: #e94560 !important;
+  font-weight: 600;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.admission-portal-link:hover {
+  color: #ffffff !important;
+}
+
+.footer-contact li {
+  font-size: 0.95rem;
+}
+
+.footer-contact strong {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-legal a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  color: #e94560;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.footer-social a:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
